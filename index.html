@@ -8,6 +8,28 @@
 		<title>Ferrara Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			
+			/* Create two equal columns that floats next to each other */
+			.columnFooter {
+			  float: left;
+			  width: 50%;
+			  padding: 10px;
+			  height: 300px; /* Should be removed. Only for demonstration */
+			}
+			
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			</style>
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -32,11 +54,12 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">About Me</a></li>				
+							<li class="active"><a href="#main">About Me</a></li>				
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/felice-ferrara-858522142/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 							<li><a href="https://github.com/ferrara94?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.instagram.com/felix080694/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 						</ul>
 					</nav>
 
@@ -81,7 +104,10 @@
 										Angular for the front end side.
 									</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/ferrara94/SalernoShop-FrontEnd" class="button">View Project</a></li>
+										<li><a href="https://github.com/ferrara94/SalernoShop-FrontEnd" class="button">
+											View Project
+											<i class="fab fa-github"></i>
+										</a></li>
 									</ul>
 								</article>
 								<article>
@@ -92,11 +118,13 @@
 									<a href="#" class="image fit"><img src="images/uni.png" alt="" /></a>
 									<p>
 										Application based on Microservices.
-
-The MicroServices are related to University World, but they are based on a limited number of entities.
+										The MicroServices are related to University World, but they are based on a limited number of entities.
 									</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/ferrara94/University_MicroServices" class="button">View Project</a></li>
+										<li><a href="https://github.com/ferrara94/University_MicroServices" class="button">
+											View Project
+											<i class="fab fa-github"></i>
+										</a></li>
 									</ul>
 								</article>
 								<article>
@@ -110,7 +138,10 @@ The MicroServices are related to University World, but they are based on a limit
 										The covered phases of compiler are Lexical, Syntactical and Semantic Analysis plus the Intermediate code generation. 
 									</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/ferrara94/Pallene_Compiler" class="button">View Project</a></li>
+										<li><a href="https://github.com/ferrara94/Pallene_Compiler" class="button">
+											View Project
+											<i class="fab fa-github"></i>
+										</a></li>
 									</ul>
 								</article>
 								<article>
@@ -121,17 +152,52 @@ The MicroServices are related to University World, but they are based on a limit
 									<a href="https://github.com/ferrara94/Personal_WebChat" class="image fit"><img src="images/chat.png" alt="" /></a>
 									<p>
 										Interactive and RealTime web chat application designed and developed using js technologies.
-
-This application has basic features and basic graphic interface. However, it covers traditional functionalities of a chat.
+										This application has basic features and basic graphic interface. However, it covers traditional functionalities of a chat.
 									</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/ferrara94/Personal_WebChat" class="button">View Project</a></li>
+										<li><a href="https://github.com/ferrara94/Personal_WebChat" class="button">
+											View Project
+											<i class="fab fa-github"></i>
+										</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="date">May 2017</span>
+										<h2><a href="#">iCarus</a></h2>
+									</header>
+									<a href="https://github.com/ferrara94/Personal_WebChat" class="image fit"><img src="images/icarus.png" alt="" /></a>
+									<p>
+										App, created during <img style="width: 3%;" src="images/apple.png" alt="" /> iOS Developer Academy, that allows the parents to monitor the iPhone activities belong to children. 
+										The app contains functionality like Web-history-analysis, 
+										by using an internal browser and search engine( eg. Google) provided by WKWebView kit, or Real-time-location by using MKMapView and CLLocation library.
+									</p>
+									<ul class="actions special">
+										<li><a href="https://www.youtube.com/watch?v=rfi_66EITIU" class="button">
+											View Project
+											<i class="fab fa-youtube"></i>
+										</a></li>
 									</ul>
 								</article>
 								
-							</section>
+								<article>
+									<header>
+										<span class="date">Over the years...</span>
+										<h2><a href="#">ALL PROJECTS</a></h2>
+									</header>
+									<a href="https://github.com/ferrara94/Personal_WebChat" class="image fit"><img src="images/projects.png" alt="" /></a>
+									
+									<ul class="actions special">
+										<li><a href="https://github.com/ferrara94?tab=repositories" class="button">
+											View All Projects
+											<i class="fab fa-github"></i>
+										</a></li>
+									</ul>
+									
+								</article>	
 
-						<!-- Footer -->
+							</section>
 							
 					</div>
 					
@@ -140,12 +206,32 @@ This application has basic features and basic graphic interface. However, it cov
 					<footer id="footer">
 						
 						<section style="align-items: center;" class="split contact">
-		
-							<section>
+								<div class="row">
+									<p  style="
+									margin-top: 2%; margin-left: 20%;
+									text-align: center; color: black; font-weight: bold;"
+									>
+										Would you like to learn how to create your first software? <br>
+										Or how to improve your computer science knowledge?<br>
+										Contact me on 
+										<a href="https://www.linkedin.com/in/felice-ferrara-858522142/">Linkedin</a> 
+										or on 
+										<a href="https://www.instagram.com/felix080694/">Instagram</a>.
+									</p>
+									
+									<img src="images/student.jpg" width="18%" alt="" 
+										style="
+											margin-bottom: 1%; margin-top: 1%;"
+									/>			
+									
+								</div>
+								
+								<section>		
 								<h3>Social</h3>
 								<ul class="icons alt">
 									<li><a href="https://www.linkedin.com/in/felice-ferrara-858522142/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
 									<li><a href="https://github.com/ferrara94?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.instagram.com/felix080694/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 								</ul>
 							</section>
 						</section>
