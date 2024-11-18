@@ -69,11 +69,11 @@
 						<!-- Featured Post -->
 							<article onclick="return false" style="pointer-events: none; cursor: default;" class="post featured">
 								<header class="major">
-									<span id="current_age" class="date"></span>
+									<span id="current_date" class="date"></span>
 									<h2><a href="#">Who I Am</h2>
 									<p style="text-align: center;">
 										As you know, my name is Felice Ferrara. 
-										<br>I am Italian and I am <span class="date" id="current_age"></span>.
+										<br>I am Italian and I am <span id="age"></span> years old.
 										<br>I am a Software Development Engineer in Munich 🇩🇪
 										<br>With regard to <u><i>Academic background</i></u>, I graduated in Computer Engineering
 										at the University of Salerno.
@@ -261,8 +261,7 @@
 				const birthYear = 1994;
 				const currentYear = new Data().getFullYear();
 				const age = currentYear - birthYear;
-				document.getElementById("current_age").innerHTML = age;
-				console.log(age)
+				document.getElementById("age").textContent = age;
 			</script>
 
 		<!-- Scripts -->
