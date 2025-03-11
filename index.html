@@ -1,284 +1,482 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Ferrara Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <head>
+    <title>Ferrara Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
 
-		<style>
-			* {
-			  box-sizing: border-box; 
-			}
-			
-			/* Create two equal columns that floats next to each other */
-			.columnFooter {
-			  float: left;
-			  width: 50%;
-			  padding: 10px;
-			  height: 300px; /* Should be removed. Only for demonstration */
-			}
-			
-			/* Clear floats after the columns */
-			.row:after {
-			  content: "";
-			  display: table;
-			  clear: both;
-			}
-			</style>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+      /* Create two equal columns that floats next to each other */
+      .columnFooter {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
 
-				<!-- Intro -->
-					<div id="intro">
-						
-						<h1>FERRARA FELICE<br />
-						PORTFOLIO</h1>
-						<img src="images/photo.jpg" width="25%" alt="" />
-						<p>Software Development Engineer 👨‍💻</p> 
-						<ul class="actions">
-							<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-		
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+      <!-- Intro -->
+      <div id="intro">
+        <h1>
+          FERRARA FELICE<br />
+          PORTFOLIO
+        </h1>
+        <img src="images/photo.jpg" width="25%" alt="" />
+        <p>Software Development Engineer 👨‍💻</p>
+        <ul class="actions">
+          <li>
+            <a href="#main" class="button icon solid solo fa-arrow-down scrolly"
+              >Continue</a
+            >
+          </li>
+        </ul>
+      </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="#main">About Me</a></li>				
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/felice-ferrara-858522142/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/ferrara94?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.instagram.com/felix080694/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						</ul>
-					</nav>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="#who-i-am">About Me</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/felice-ferrara-858522142/"
+              class="icon brands fa-linkedin"
+              ><span class="label">Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/ferrara94?tab=repositories"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/felix080694/"
+              class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+        </ul>
+      </nav>
 
-				<!-- Main -->
-					<div id="main">
+      <!-- Main -->
+      <div id="main">
+        <!-- Featured Post -->
+        <article
+          onclick="return false"
+          style="pointer-events: none; cursor: default"
+          class="post featured"
+        >
+          <header class="major">
+            <span id="current_date" class="date"></span>
+            <h3 id="who-i-am" style="text-align: center">👤 Who I Am</h3>
+            <p style="text-align: center">
+              HI!👋 As you know, my name is Felice Ferrara.
+              <br />I’m an Italian Software Development Engineer based in Munich
+              🇩🇪 <br />I am <span id="age"></span> years old and passionate
+              about software development. <br />I hold a degree in
+              <span style="color: rgb(34, 34, 240)">
+                🎓 <u><i>Computer Engineering</i></u>
+              </span>
+              , from the University of Salerno <br />My expertise spans both
+              <span style="color: rgb(34, 34, 240)"
+                ><u><i>backend and frontend technologies</i></u></span
+              >, with a strong focus on Java and JavaScript ecosystems.
+              <br />and... I really enjoy working on Full stack application 🧑‍💻
+            </p>
+          </header>
 
-						<!-- Featured Post -->
-							<article onclick="return false" style="pointer-events: none; cursor: default;" class="post featured">
-								<header class="major">
-									<span id="current_date" class="date"></span>
-									<h2><a href="#">Who I Am</h2>
-									<p style="text-align: center;">
-										HI!👋 As you know, my name is Felice Ferrara. 
-										<br>I’m an Italian Software Development Engineer based in Munich 🇩🇪
-										<br>I am <span id="age"></span> years old and passionate about software development.
-										<br>I hold a degree in <u><i>Computer Engineering</i></u>, from the University of Salerno
-										<br>My expertise spans both <u><i>backend and frontend technologies</i></u>, with a strong 
-										focus on Java and JavaScript ecosystems.
-										<br>and... I really enjoy working on Full stack application 🧑‍💻
-									</p>
-								</header>
+          <h2 style="text-align: center">🚀 Tech Stack & Expertise</h2>
+          <div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+              "
+            >
+              <p
+                style="
+                  width: 33%;
+                  text-align: center;
+                  padding: 10px;
+                  border: 2px solid #ddd;
+                  border-radius: 10px;
+                  margin: 5px;
+                "
+              >
+                <b>☕ Backend - Java & Spring</b><br />
+                🔹 Spring Boot, Spring Security 🔹 Hibernate, Spring Data<br />
+                🔹 Microservices, RESTful APIs<br />
+                🔹 JUnit, Mockito<br />
+                🔹 RabbitMQ
+              </p>
 
-								<h2>PROJECTS</h2>
-								<i  class='far fa-arrow-alt-circle-left' style='font-size:24px; transform: rotate(-45deg);'></i>
-								<i  class='far fa-arrow-alt-circle-down' style='font-size:24px'></i>
-								<i  class='far fa-arrow-alt-circle-right' style='font-size:24px; transform: rotate(45deg);'></i>
-								
-								<a ></a>
-							</article>
+              <p
+                style="
+                  width: 33%;
+                  text-align: center;
+                  padding: 10px;
+                  border: 2px solid #ddd;
+                  border-radius: 10px;
+                  margin: 5px;
+                "
+              >
+                <b>⚡ Frontend - JavaScript </b><br />
+                🔹 Angular, React.js<br />
+                🔹 TypeScript, RxJS<br />
+                🔹 Node.js, Express.js<br />
+                🔹 NestJS, Next.js
+              </p>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">November 2024</span>
-										<h2><a href="https://github.com/ferrara94/SalernoShop-FrontEnd">Salerno Shop</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/salerno.png" /></a>
-									<p>
-										Web Application developed by using Java/Spring for the backend side and 
-										Angular for the front end side.
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ferrara94/SalernoShop-FrontEnd" class="button">
-											View Project
-											<i class="fab fa-github"></i>
-										</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">September 2021</span>
-										<h2><a href="https://github.com/ferrara94/University_MicroServices">University Micro Services</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/uni.png" alt="" /></a>
-									<p>
-										Application based on Microservices.
-										The MicroServices are related to University World, but they are based on a limited number of entities.
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ferrara94/University_MicroServices" class="button">
-											View Project
-											<i class="fab fa-github"></i>
-										</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">October 2019</span>
-										<h2><a href="https://github.com/ferrara94/Pallene_Compiler">My Pallene Compiler</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/compiler.png" alt="" /></a>
-									<p>
-										Compiler version of Pallene programming language (it is a statically typed, ahead-of-time-compiled sister language to Lua, with a focus on performance. It is also a friendly fork of the Titan language). 
-										The covered phases of compiler are Lexical, Syntactical and Semantic Analysis plus the Intermediate code generation. 
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ferrara94/Pallene_Compiler" class="button">
-											View Project
-											<i class="fab fa-github"></i>
-										</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">January 2021</span>
-										<h2><a href="#">Personal Web Chat</a></h2>
-									</header>
-									<a href="https://github.com/ferrara94/Personal_WebChat" class="image fit"><img src="images/chat.png" alt="" /></a>
-									<p>
-										Interactive and RealTime web chat application designed and developed using js technologies.
-										This application has basic features and basic graphic interface. However, it covers traditional functionalities of a chat.
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ferrara94/Personal_WebChat" class="button">
-											View Project
-											<i class="fab fa-github"></i>
-										</a></li>
-									</ul>
-								</article>
+              <p
+                style="
+                  width: 33%;
+                  text-align: center;
+                  padding: 10px;
+                  border: 2px solid #ddd;
+                  border-radius: 10px;
+                  margin: 5px;
+                "
+              >
+                <b>☁️ Cloud & DevOps</b><br />
+                🔹 Docker, Kubernetes<br />
+                🔹 CI/CD (GitHub Actions)
+              </p>
+            </div>
+          </div>
 
-								<article>
-									<header>
-										<span class="date">May 2017</span>
-										<h2><a href="#">iCarus</a></h2>
-									</header>
-									<a href="https://github.com/ferrara94/Personal_WebChat" class="image fit"><img src="images/icarus.png" alt="" /></a>
-									<p>
-										App, created during <img style="width: 3%;" src="images/apple.png" alt="" /> iOS Developer Academy, that allows the parents to monitor the iPhone activities belong to children. 
-										The app contains functionality like Web-history-analysis, 
-										by using an internal browser and search engine( eg. Google) provided by WKWebView kit, or Real-time-location by using MKMapView and CLLocation library.
-									</p>
-									<ul class="actions special">
-										<li><a href="https://www.youtube.com/watch?v=rfi_66EITIU" class="button">
-											View Project
-											<i class="fab fa-youtube"></i>
-										</a></li>
-									</ul>
-								</article>
-								
-								<article>
-									<header>
-										<span class="date">Over the years...</span>
-										<h2><a href="#">ALL PROJECTS</a></h2>
-									</header>
-									<a href="https://github.com/ferrara94/Personal_WebChat" class="image fit"><img src="images/projects.png" alt="" /></a>
-									
-									<ul class="actions special">
-										<li><a href="https://github.com/ferrara94?tab=repositories" class="button">
-											View All Projects
-											<i class="fab fa-github"></i>
-										</a></li>
-									</ul>
-									
-								</article>	
+          <br /><br />
 
-							</section>
-							
-					</div>
-					
+          <h2 style="text-align: center">📂 Projects</h2>
+          <i
+            class="far fa-arrow-alt-circle-left"
+            style="font-size: 24px; transform: rotate(-45deg)"
+          ></i>
+          <i class="far fa-arrow-alt-circle-down" style="font-size: 24px"></i>
+          <i
+            class="far fa-arrow-alt-circle-right"
+            style="font-size: 24px; transform: rotate(45deg)"
+          ></i>
 
-				<!-- Footer -->
-					<footer id="footer">
-						
-						<section style="align-items: center;" class="split contact">
-								<div class="row">
-									<p  style="
-									margin-top: 2%; 
-									text-align: center; color: black; font-weight: bold;"
-									>
-										Would you like to learn how to create your first software? <br>
-										Or how to improve your computer science knowledge?<br>
-										Contact me on 
-										<a href="https://www.linkedin.com/in/felice-ferrara-858522142/">Linkedin</a> 
-										or on 
-										<a href="https://www.instagram.com/felix080694/">Instagram</a>.
-									</p>
-									
-									<!-- <img src="images/student.jpg" width="18%" alt="" 
+          <a></a>
+        </article>
+
+        <!-- Posts -->
+        <section class="posts">
+          <article>
+            <header>
+              <span class="date">November 2024</span>
+              <h2>
+                <a href="https://github.com/ferrara94/SalernoShop-FrontEnd"
+                  >Salerno Shop</a
+                >
+              </h2>
+            </header>
+            <a href="#" class="image fit"><img src="images/salerno.png" /></a>
+            <p>
+              Web Application developed by using Java/Spring for the backend
+              side and Angular for the front end side.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/ferrara94/SalernoShop-FrontEnd"
+                  class="button"
+                >
+                  View Project
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <span class="date">September 2021</span>
+              <h2>
+                <a href="https://github.com/ferrara94/University_MicroServices"
+                  >University Micro Services</a
+                >
+              </h2>
+            </header>
+            <a href="#" class="image fit"
+              ><img src="images/uni.png" alt=""
+            /></a>
+            <p>
+              Application based on Microservices. The MicroServices are related
+              to University World, but they are based on a limited number of
+              entities.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/ferrara94/University_MicroServices"
+                  class="button"
+                >
+                  View Project
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <span class="date">October 2019</span>
+              <h2>
+                <a href="https://github.com/ferrara94/Pallene_Compiler"
+                  >My Pallene Compiler</a
+                >
+              </h2>
+            </header>
+            <a href="#" class="image fit"
+              ><img src="images/compiler.png" alt=""
+            /></a>
+            <p>
+              Compiler version of Pallene programming language (it is a
+              statically typed, ahead-of-time-compiled sister language to Lua,
+              with a focus on performance. It is also a friendly fork of the
+              Titan language). The covered phases of compiler are Lexical,
+              Syntactical and Semantic Analysis plus the Intermediate code
+              generation.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/ferrara94/Pallene_Compiler"
+                  class="button"
+                >
+                  View Project
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <span class="date">January 2021</span>
+              <h2><a href="#">Personal Web Chat</a></h2>
+            </header>
+            <a
+              href="https://github.com/ferrara94/Personal_WebChat"
+              class="image fit"
+              ><img src="images/chat.png" alt=""
+            /></a>
+            <p>
+              Interactive and RealTime web chat application designed and
+              developed using js technologies. This application has basic
+              features and basic graphic interface. However, it covers
+              traditional functionalities of a chat.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/ferrara94/Personal_WebChat"
+                  class="button"
+                >
+                  View Project
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <span class="date">May 2017</span>
+              <h2><a href="#">iCarus</a></h2>
+            </header>
+            <a
+              href="https://github.com/ferrara94/Personal_WebChat"
+              class="image fit"
+              ><img src="images/icarus.png" alt=""
+            /></a>
+            <p>
+              App, created during
+              <img style="width: 3%" src="images/apple.png" alt="" /> iOS
+              Developer Academy, that allows the parents to monitor the iPhone
+              activities belong to children. The app contains functionality like
+              Web-history-analysis, by using an internal browser and search
+              engine( eg. Google) provided by WKWebView kit, or
+              Real-time-location by using MKMapView and CLLocation library.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=rfi_66EITIU"
+                  class="button"
+                >
+                  View Project
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <span class="date">Over the years...</span>
+              <h2><a href="#">ALL PROJECTS</a></h2>
+            </header>
+            <a
+              href="https://github.com/ferrara94/Personal_WebChat"
+              class="image fit"
+              ><img src="images/projects.png" alt=""
+            /></a>
+
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/ferrara94?tab=repositories"
+                  class="button"
+                >
+                  View All Projects
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section style="align-items: center" class="split contact">
+          <div class="row">
+            <p
+              style="
+                margin-top: 2%;
+                text-align: center;
+                color: black;
+                font-weight: bold;
+              "
+            >
+              Looking to create your first software or enhance your computer
+              science skills? <br />
+              Feel free to reach out to me on
+              <a href="https://www.linkedin.com/in/felice-ferrara-858522142/"
+                >Linkedin</a
+              >
+              or
+              <a href="https://www.instagram.com/felix080694/">Instagram</a>.
+            </p>
+
+            <!-- <img src="images/student.jpg" width="18%" alt="" 
 										style="
 											margin-bottom: 1%; margin-top: 1%;"
-									/>	 -->		
-									
-								</div>
-								
-								<section>		
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/felice-ferrara-858522142/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/ferrara94?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.instagram.com/felix080694/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+									/>	 -->
+          </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						
-					</div>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/felice-ferrara-858522142/"
+                  class="icon brands alt fa-linkedin"
+                  ><span class="label">Linkedin</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ferrara94?tab=repositories"
+                  class="icon brands alt fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/felix080694/"
+                  class="icon brands alt fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
 
-			</div>
+      <!-- Copyright -->
+      <div id="copyright"></div>
+    </div>
 
-			<script>
-				const monthNames = ["January", "February", "March", "April", "May", "June",
-  				"July", "August", "September", "October", "November", "December"
-				];
+    <script>
+      const monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
 
-				date = new Date();
-				year = date.getFullYear();
-				month = date.getMonth();
-				day = date.getDate();	
-				document.getElementById("current_date").innerHTML = 
-					monthNames[month] + " " + day + ", " + year;
-			</script>
+      date = new Date();
+      year = date.getFullYear();
+      month = date.getMonth();
+      day = date.getDate();
+      document.getElementById("current_date").innerHTML =
+        monthNames[month] + " " + day + ", " + year;
+    </script>
 
-			<script>
-				const birthDate = new Date(1994, 5, 8); // Month is 0-based (5 = June)
-				const today = new Date();
+    <script>
+      const birthDate = new Date(1994, 5, 8); // Month is 0-based (5 = June)
+      const today = new Date();
 
-				let age = today.getFullYear() - birthDate.getFullYear();
+      let age = today.getFullYear() - birthDate.getFullYear();
 
-				const birthdayThisYear = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
-				if (today < birthdayThisYear) {
-					age--; 
-				}
+      const birthdayThisYear = new Date(
+        today.getFullYear(),
+        birthDate.getMonth(),
+        birthDate.getDate()
+      );
+      if (today < birthdayThisYear) {
+        age--;
+      }
 
-				document.getElementById("age").textContent = age;
-			</script>
+      document.getElementById("age").textContent = age;
+    </script>
 
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
