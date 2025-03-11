@@ -11,7 +11,7 @@
 
 		<style>
 			* {
-			  box-sizing: border-box;
+			  box-sizing: border-box; 
 			}
 			
 			/* Create two equal columns that floats next to each other */
@@ -258,11 +258,19 @@
 			</script>
 
 			<script>
-				const birthYear = 1994;
-				const currentYear = new Date().getFullYear();
-				const age = currentYear - birthYear;
+				const birthDate = new Date(1994, 5, 8); // Month is 0-based (5 = June)
+				const today = new Date();
+
+				let age = today.getFullYear() - birthDate.getFullYear();
+
+				const birthdayThisYear = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+				if (today < birthdayThisYear) {
+					age--; 
+				}
+
 				document.getElementById("age").textContent = age;
 			</script>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
