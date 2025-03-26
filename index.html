@@ -31,6 +31,33 @@
         display: table;
         clear: both;
       }
+
+      .responsive-container {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+
+      .responsive-container p {
+        width: 32%; /* Keep them side by side on large screens */
+        text-align: center;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        margin: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .responsive-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .responsive-container p {
+          width: 90%; /* Stack them on smaller screens */
+        }
+      }
     </style>
 
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -117,23 +144,8 @@
 
           <h2 style="text-align: center">🚀 Tech Stack & Expertise</h2>
           <div>
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                text-align: center;
-              "
-            >
-              <p
-                style="
-                  width: 33%;
-                  text-align: center;
-                  padding: 10px;
-                  border: 2px solid #ddd;
-                  border-radius: 10px;
-                  margin: 5px;
-                "
-              >
+            <div class="responsive-container">
+              <p>
                 <b>☕ Backend - Java & Spring</b><br />
                 🔹 Spring Boot, Spring Security<br />
                 🔹 Hibernate, Spring Data<br />
@@ -142,16 +154,7 @@
                 🔹 RabbitMQ
               </p>
 
-              <p
-                style="
-                  width: 33%;
-                  text-align: center;
-                  padding: 10px;
-                  border: 2px solid #ddd;
-                  border-radius: 10px;
-                  margin: 5px;
-                "
-              >
+              <p>
                 <b>⚡ Frontend - JavaScript </b><br />
                 🔹 Angular, React.js<br />
                 🔹 TypeScript, RxJS<br />
@@ -159,16 +162,7 @@
                 🔹 NestJS, Next.js
               </p>
 
-              <p
-                style="
-                  width: 33%;
-                  text-align: center;
-                  padding: 10px;
-                  border: 2px solid #ddd;
-                  border-radius: 10px;
-                  margin: 5px;
-                "
-              >
+              <p>
                 <b>☁️ Cloud & DevOps</b><br />
                 🔹 Docker, Kubernetes<br />
                 🔹 CI/CD (GitHub Actions)
