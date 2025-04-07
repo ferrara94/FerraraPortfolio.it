@@ -3,7 +3,7 @@
 	
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
   <head>
     <title>Ferrara Portfolio</title>
     <meta charset="utf-8" />
@@ -17,15 +17,18 @@
         box-sizing: border-box;
       }
 
-      /* Create two equal columns that floats next to each other */
+      .major,
+      .major p {
+        font-style: normal !important;
+      }
+
       .columnFooter {
         float: left;
         width: 50%;
         padding: 10px;
-        height: 300px; /* Should be removed. Only for demonstration */
+        height: 300px;
       }
 
-      /* Clear floats after the columns */
       .row:after {
         content: "";
         display: table;
@@ -40,7 +43,7 @@
       }
 
       .responsive-container p {
-        width: 32%; /* Keep them side by side on large screens */
+        width: 32%;
         text-align: center;
         padding: 10px;
         border: 2px solid #ddd;
@@ -55,7 +58,7 @@
         }
 
         .responsive-container p {
-          width: 90%; /* Stack them on smaller screens */
+          width: 90%;
         }
       }
     </style>
@@ -65,55 +68,58 @@
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
   </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-      <!-- Intro -->
-      <div id="intro">
-        <h1>
-          FERRARA FELICE<br />
-          PORTFOLIO
-        </h1>
-        <img src="images/photo.jpg" width="25%" alt="" />
-        <p>Software Development Engineer 👨‍💻</p>
-        <ul class="actions">
-          <li>
-            <a href="#main" class="button icon solid solo fa-arrow-down scrolly"
-              >Continue</a
-            >
-          </li>
-        </ul>
-      </div>
 
-      <!-- Nav -->
-      <nav id="nav">
-        <ul class="links">
-          <li class="active"><a href="#who-i-am">About Me</a></li>
-        </ul>
-        <ul class="icons">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/felice-ferrara-858522142/"
-              class="icon brands fa-linkedin"
-              ><span class="label">Linkedin</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/ferrara94?tab=repositories"
-              class="icon brands fa-github"
-              ><span class="label">GitHub</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/felix080694/"
-              class="icon brands alt fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-        </ul>
-      </nav>
+  <body class="is-preload">
+    <div id="wrapper" class="fade-in">
+      <header>
+        <div id="intro">
+          <h1>
+            FERRARA FELICE<br />
+            PORTFOLIO
+          </h1>
+          <img src="images/photo.jpg" width="25%" alt="" />
+          <p>Software Development Engineer 👨‍💻</p>
+          <ul class="actions">
+            <li>
+              <a
+                href="#main"
+                class="button icon solid solo fa-arrow-down scrolly"
+                >Continue</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul class="links">
+            <li class="active"><a href="#who-i-am">About Me</a></li>
+          </ul>
+          <ul class="icons">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/felice-ferrara-858522142/"
+                class="icon brands fa-linkedin"
+                ><span class="label">Linkedin</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/ferrara94?tab=repositories"
+                class="icon brands fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/felix080694/"
+                class="icon brands alt fa-instagram"
+                ><span class="label">Instagram</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
       <!-- Main -->
       <div id="main">
@@ -132,43 +138,50 @@
               🇩🇪 <br />I am <span id="age"></span> years old and passionate
               about software development. <br />I hold a degree in
               <span style="color: rgb(34, 34, 240)">
-                🎓 <u><i>Computer Engineering</i></u>
+                🎓 <u>Computer Engineering</u>
+                <!-- Removed <i> to remove italics -->
               </span>
               , from the University of Salerno. <br />My expertise spans both
-              <span style="color: rgb(34, 34, 240)"
-                ><u><i>backend and frontend technologies</i></u></span
-              >, with a strong focus on Java and JavaScript ecosystems.
-              <br />and... if you want to know more about me, drop me a message on my social profiles!
+              <span style="color: rgb(34, 34, 240)">
+                <u>backend and frontend technologies</u>
+                <!-- Removed <i> here as well -->
+              </span>
+              , with a strong focus on Java and JavaScript ecosystems.
+              <br />
             </p>
           </header>
 
-          <h2 style="text-align: center">🚀 Tech Stack & Expertise</h2>
-          <div>
-            <div class="responsive-container">
-              <p>
-                <b>☕ Backend - Java & Spring</b><br />
-                🔹 Spring Boot, Spring Security<br />
-                🔹 Hibernate, Spring Data<br />
-                🔹 Microservices, RESTful APIs<br />
-                🔹 JUnit, Mockito<br />
-                🔹 RabbitMQ
-              </p>
+          <main>
+            <section>
+              <h2 style="text-align: center">🚀 Tech Stack & Expertise</h2>
+              <div>
+                <div class="responsive-container">
+                  <p>
+                    <b>☕ Backend - Java & Spring</b><br />
+                    🔹 Spring Boot, Spring Security<br />
+                    🔹 Hibernate, Spring Data<br />
+                    🔹 Microservices, RESTful APIs<br />
+                    🔹 JUnit, Mockito<br />
+                    🔹 RabbitMQ
+                  </p>
 
-              <p>
-                <b>⚡ Frontend - JavaScript </b><br />
-                🔹 Angular, React.js<br />
-                🔹 TypeScript, RxJS<br />
-                🔹 Node.js, Express.js<br />
-                🔹 NestJS, Next.js
-              </p>
+                  <p>
+                    <b>⚡ Frontend - JavaScript </b><br />
+                    🔹 Angular, React.js<br />
+                    🔹 TypeScript, RxJS<br />
+                    🔹 Node.js, Express.js<br />
+                    🔹 NestJS, Next.js
+                  </p>
 
-              <p>
-                <b>☁️ Cloud & DevOps</b><br />
-                🔹 Docker, Kubernetes<br />
-                🔹 CI/CD (GitHub Actions)
-              </p>
-            </div>
-          </div>
+                  <p>
+                    <b>☁️ Cloud & DevOps</b><br />
+                    🔹 Docker, Kubernetes<br />
+                    🔹 CI/CD (GitHub Actions)
+                  </p>
+                </div>
+              </div>
+            </section>
+          </main>
 
           <br /><br />
 
