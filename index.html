@@ -23,7 +23,7 @@
 
       article.card {
         position: relative;
-        padding-top: 20px; /* optional: prevents overlap with the badge */
+        padding-top: 40px; /* optional: prevents overlap with the badge */
       }
 
       .new-badge img {
@@ -89,6 +89,12 @@
 
         .responsive-container p {
           width: 90%;
+        }
+      }
+
+      @media (min-width: 768px) {
+        article.card {
+          padding-top: 20px; /* On larger screens, revert to smaller padding */
         }
       }
     </style>
