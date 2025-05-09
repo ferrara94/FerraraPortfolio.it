@@ -11,16 +11,39 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       * {
         box-sizing: border-box;
       }
 
+      article.card {
+        position: relative;
+        padding-top: 20px; /* optional: prevents overlap with the badge */
+      }
+
+      .new-badge img {
+        height: 40px;
+        width: auto;
+      }
+
+      .new-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 10;
+        background-color: white; /* or transparent, depending on your design */
+        border-radius: 50%;
+        padding: 3px; /* reduced padding for a smaller border */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.7); /* smaller box-shadow */
+      }
+
       article header h2 a {
-        font-family: 'Poppins';
+        font-family: "Poppins";
         text-transform: none; /* Prevents text from being transformed to uppercase */
         letter-spacing: normal; /* Resets any letter spacing */
       }
@@ -238,7 +261,10 @@
             </ul>
           </article>
 
-          <article>
+          <article class="card">
+            <span class="new-badge">
+              <img src="images/new.svg" alt="New project" height="40px" />
+            </span>
             <header>
               <h2><a href="#">🔧 Tools Sharing Platform</a></h2>
             </header>
@@ -325,7 +351,6 @@
             </ul>
           </article>
 
-
           <article>
             <header>
               <h2><a href="#">iCarus</a></h2>
@@ -359,7 +384,9 @@
 
           <article>
             <header>
-              <h2><a href="#"><i class="fab fa-github"></i> ALL PROJECTS</a></h2>
+              <h2>
+                <a href="#"><i class="fab fa-github"></i> ALL PROJECTS</a>
+              </h2>
             </header>
             <a
               href="https://github.com/ferrara94/Personal_WebChat"
