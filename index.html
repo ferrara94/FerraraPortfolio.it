@@ -21,6 +21,12 @@
         box-sizing: border-box;
       }
 
+      @media (max-width: 600px) {
+        .about {
+          padding: 1rem;
+          font-size: 1rem;
+        }
+      }
       article.card {
         position: relative;
         padding-top: 40px; /* optional: prevents overlap with the badge */
@@ -168,26 +174,27 @@
           <header class="major">
             <span id="current_date" class="date"></span>
             <h3 id="who-i-am" style="text-align: center">👤 Who I Am</h3>
-            <p style="text-align: center">
+            <p class="about" style="text-align: center">
               HI!👋 I am Felice Ferrara, a <span id="age"></span> year-old
-              Italian Software Development Engineer based in Munich 🇩🇪,<br /> with
-              a degree in
+              Italian Software Development Engineer based in Munich 🇩🇪,<br />
+              with a degree in
               <span style="color: rgb(34, 34, 240)">
                 🎓 <u>Computer Engineering</u>
               </span>
-              from the University of Salerno. <br /><br/>
+              from the University of Salerno. <br /><br />
               I am passionate about crafting software solutions and I enjoy
               being involved in architectural design and system planning. <br />
-              Thanks to my professional experience, curiosity and time I dedicated to learning in my
-              free time, my expertise spans both
+              Thanks to my professional experience, curiosity and time I
+              dedicated to learning in my free time, my expertise spans both
               <span style="color: rgb(34, 34, 240)">
                 <u>backend and frontend technologies</u>
                 <!-- Removed <i> here as well -->
               </span>
               - with a strong focus on Java and JavaScript ecosystems.
               <br />
-              <br/> Take a look below to see some of the projects and
-              technologies I’ve worked with 👇
+              <br />
+              Take a look below to see some of the projects and technologies
+              I’ve worked with 👇
             </p>
           </header>
 
