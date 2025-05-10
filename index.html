@@ -23,8 +23,16 @@
 
       @media (max-width: 600px) {
         .about {
+          display: block;
           padding: 1rem;
           font-size: 1rem;
+          line-height: 1.8;
+          word-break: break-word;
+          overflow-wrap: break-word;
+        }
+
+        .about br {
+          display: none; /* Optional: removes forced line breaks on mobile */
         }
       }
       article.card {
